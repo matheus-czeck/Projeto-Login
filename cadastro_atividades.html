@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Atividades e Pessoas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Atividades e Pessoas</h2>
+
+        <h3>Cadastro de Pessoa</h3>
+        <form id="pessoaForm">
+            <input type="text" id="nomePessoa" placeholder="Nome">
+            <input type="tel" id="telefone" placeholder="Telefone">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="rua" placeholder="Rua">
+            <input type="text" id="numero" placeholder="Número">
+            <input type="text" id="complemento" placeholder="Complemento">
+            <input type="text" id="cidade" placeholder="Cidade">
+        </form>
+
+        
+        <h3>Cadastro de Atividade</h3>
+        <form id="atividadeForm">
+            <input type="text" id="nomeAtividade" placeholder="Nome">
+            <textarea id="descricao" placeholder="Descrição"></textarea>
+            <label for="dataInicio">Data de Início:</label>
+            <input type="date" id="dataInicio">
+            <label for="dataFim">Data de Término:</label>
+            <input type="date" id="dataFim">
+            <label for="dataFim">Data de Criação:</label>
+            <input type="date" id="dataCriacao">
+            
+        </form>
+        <button type="button" onclick="cadastrar()">Cadastrar Pessoa e Atividade</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
